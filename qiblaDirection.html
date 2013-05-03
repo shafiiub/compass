@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+    
+<body>
+<div id="qiblaDirection" data-role="page" data-add-back-btn="true">
+
+	<div data-role="header">
+		<h1 id="pageTitle">Compass Direction</h1>
+	</div>
+
+  <div data-role="content"> 
+
+	<div id="locationDetails" style="position:relative;">
+	<div class="compass"><img src="pics/compass.png" width="270" height="270" id="img-compass"/></div>
+        <div class="direction" style="position:absolute;top:0"><img src="pics/direction-small.png" width="270" height="270" id="img-direction"/></div>                
+	</div>
+    <p id="qibla">Loading...</p> 
+    <input type="text" id="txtHeading" value="" />
+    <button onclick="startWatch();">Start Watching</button>
+    <button onclick="stopWatch();">Stop Watching</button>
+  </div>
+
+</div>
+
+</body>
+
+</html>
