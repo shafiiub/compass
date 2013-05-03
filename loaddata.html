@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Load Data</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<div id="locationintodb" data-role="page" >
+	<div data-role="header" data-position="fixed">
+		<h1>Load Data</h1>
+	</div>
+	<div data-role="content">
+         <ul id="employeeList" data-role="listview" data-filter="true"></ul>
+         <a href="#" data-role="button" data-icon="delete" id="btnDelete">Delete</a>
+    </div>		
+    <div data-role="footer" class="footer-docs" data-theme="c">
+   <a href="index.html" rel="external">home</a>
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="js/cordova-2.2.0.js"></script>
+<!--script src="js/jquery.js"></script -->
+<!--script src="js/jquery.mobile-1.0rc1.min.js"></script -->
+<script src="js/employeelist.js"></script>
+<script src="js/employeedetails.js"></script>
+<script src="js/reportlist.js"></script>
+<script src="js/loadintoDB.js"></script>
+<script src="js/qiblaDirection.js"></script>
+
+<script>
+// Wait for Cordova to load
+    document.addEventListener("deviceready", onDeviceReady, false);
+</script>
+</body>
+</html>
